@@ -1,0 +1,17 @@
+
+
+FROM node:alpine
+
+ENV NAME=jai \
+    WORKY=NGU
+
+RUN mkdir -P /HOME/APP
+
+WORKDIR /HOME/APP
+
+RUN npm install
+
+COPY . /HOME/APP
+
+
+
